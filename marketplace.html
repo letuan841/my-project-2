@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Place</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header header-fixed" id="header">
+        <div class="header__wrapper">
+            <!-- Header Logo -->
+            <a href="./index.html" class="header__logo">
+                <img src="./assets/images/icon/nft-marketplace.svg" alt="Nft Marketplace" class="logo">
+            </a>
+
+            <!-- Header Navigation -->
+            <nav class="header__navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Marketplace</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./rankings.html" class="navbar__link">Rankings</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#!" class="navbar__link">Connect a wallet</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header btn -->
+            <a href="./create-account-desktop.html" class="btn header__btn">
+                <img src="./assets/images/icon/User.svg" class="btn__icon" alt="">
+                Sign Up
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+
+        <!-- Browse Marketplace -->
+        <div class="browse">
+            <div class="main-content">
+                <h1 class="title-lv2">Browse Marketplace</h1>
+                <p class="desc">Browse through more than 50k NFTs on the NFT Marketplace.</p>
+
+                <div class="browse__search">
+                    <input type="text" name="search" class="search__input" placeholder="Search your favorite NFTs">
+                    <img src="./assets/images/icon/MagnifyingGlass.svg" class="search__icon" alt="search">
+                </div>
+            </div>
+        </div>
+
+        <input type="radio" name="product" id="radio-product1" class="radio-product" checked>
+        <input type="radio" name="product" id="radio-product2" class="radio-product">
+
+        <!-- Crossbar -->
+        <div class="crossbar">
+            <div class="main-content">
+                <div class="crossbar-wrapper">
+                    <label for="radio-product1" class="crossbar1">
+                        <span class="label">NFTs</span>
+                        <span class="value">302</span>
+                    </label>
+
+                    <label for="radio-product2" class="crossbar2">
+                        <span class="label">Collections</span>
+                        <span class="value">67</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product -->
+        <div class="product__container">
+            <div class="product">
+                <div class="main-content">
+                    <div class="product__wrapper">
+                        <!-- Product Lists 1 -->
+                        <div class="product__list first">
+
+                            <!-- Product Item 1 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Magic Mushroom 0325.png" alt="Magic Mushroom 0325"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Magic Mushroom 0325</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 3.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Shroomie</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 2 -->
+                            <a href="./nft.html" class="product__item">
+
+                                <img src="./assets/images/thumb/Happy Robot 032.png" alt="Happy Robot 032"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Happy Robot 032</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 4.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">BeKind2Robots</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 3 -->
+                            <a href="./nft.html" class="product__item">
+
+                                <img src="./assets/images/thumb/Happy Robot 024.png" alt="Happy Robot 024"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Happy Robot 024</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 4.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">BeKind2Robots</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <!-- Product Item 4 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Designer Bear.png" alt="Designer Bear" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Designer Bear</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 2.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Mr Fox</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 5 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Colorful Dog 0356.png" alt="Colorful Dog 0356"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Colorful Dog 0356</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 7.svg"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Keepitreal</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 6 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Dancing Robot 0312.png" alt="Dancing Robot 0312"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Dancing Robot 0312</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Rankings Avatar 8.png" class="creator__avatar"
+                                            alt="avatar">
+                                        <span class="creator__name line-clamp">Robotica</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 7 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Cherry Blossom Girl 035.png"
+                                    alt="Cherry Blossom Girl 035" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Cherry Blossom Girl 035</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 5.svg"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">MoonDancer</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 8 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Space Travel.png" alt="Space Travel" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Space Travel</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 8.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">NebulaKid</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 9 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Sunset Dimension.png" alt="Sunset Dimension"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Sunset Dimension</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar-1.png" class="creator__avatar"
+                                            alt="avatar">
+                                        <span class="creator__name line-clamp">Animakid</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 10 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Desert Walk.png" alt="Desert Walk" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Desert Walk</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 1.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Catch 22</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 11 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/IceCream Ape 0324.png" alt="IceCream Ape 0324"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">IceCream Ape 0324</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 9.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Ice Ape Club</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 12 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Colorful Dog 0344.png" alt="Colorful Dog 0344"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Colorful Dog 0344</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 10.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">PuppyPower</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+
+                        <!-- Product Lists 2 -->
+                        <div class="product__list">
+
+                            <!-- Product Item 1 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Magic Mushroom 0325.png" alt="Magic Mushroom 0325"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Magic Mushroom 0325</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 3.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Shroomie</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 2 -->
+                            <a href="./nft.html" class="product__item">
+
+                                <img src="./assets/images/thumb/Happy Robot 032.png" alt="Happy Robot 032"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Happy Robot 032</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 4.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">BeKind2Robots</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 3 -->
+                            <a href="./nft.html" class="product__item">
+
+                                <img src="./assets/images/thumb/Happy Robot 024.png" alt="Happy Robot 024"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Happy Robot 024</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 4.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">BeKind2Robots</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <!-- Product Item 4 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Designer Bear.png" alt="Designer Bear" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Designer Bear</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 2.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Mr Fox</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 5 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Colorful Dog 0356.png" alt="Colorful Dog 0356"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Colorful Dog 0356</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 7.svg"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Keepitreal</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 6 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Dancing Robot 0312.png" alt="Dancing Robot 0312"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Dancing Robot 0312</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Rankings Avatar 8.png" class="creator__avatar"
+                                            alt="avatar">
+                                        <span class="creator__name line-clamp">Robotica</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 7 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Cherry Blossom Girl 035.png"
+                                    alt="Cherry Blossom Girl 035" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Cherry Blossom Girl 035</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 5.svg"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">MoonDancer</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 8 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Space Travel.png" alt="Space Travel" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Space Travel</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 8.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">NebulaKid</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 9 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Sunset Dimension.png" alt="Sunset Dimension"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Sunset Dimension</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar-1.png" class="creator__avatar"
+                                            alt="avatar">
+                                        <span class="creator__name line-clamp">Animakid</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 10 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Desert Walk.png" alt="Desert Walk" class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Desert Walk</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 1.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Catch 22</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 11 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/IceCream Ape 0324.png" alt="IceCream Ape 0324"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">IceCream Ape 0324</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 9.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">Ice Ape Club</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Product Item 12 -->
+                            <a href="./nft.html" class="product__item">
+                                <img src="./assets/images/thumb/Colorful Dog 0344.png" alt="Colorful Dog 0344"
+                                    class="thumb">
+
+                                <!-- Product Body -->
+                                <div class="product__item--body">
+                                    <p class="product__name">Colorful Dog 0344</p>
+
+                                    <!-- Creator -->
+                                    <div class="creator">
+                                        <img src="./assets/images/avatars/Avatar Placeholder 10.png"
+                                            class="creator__avatar" alt="avatar">
+                                        <span class="creator__name line-clamp">PuppyPower</span>
+                                    </div>
+
+                                    <!-- Product Price -->
+                                    <div class="product__price">
+                                        <div class="price">
+                                            <span class="price__label">Price</span>
+                                            <span class="price__value">1.63 ETH</span>
+                                        </div>
+                                        <div class="highest__price">
+                                            <span class="price__label">Highest Bid</span>
+                                            <span class="price__value">2 wETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="main-content">
+            <div class="footer-wrapper">
+                <!-- Footer Social -->
+                <div class="footer-social">
+                    <div class="footer-logo">
+                        <img src="./assets/images/icon/nft-marketplace.svg" alt="NFT Marketplace">
+                    </div>
+
+                    <p class="footer-desc">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="footer-desc">Join our community</p>
+
+                    <div class="socials">
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/DiscordLogo.svg" class="socials-icon" alt="Discord">
+                        </a>
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/YoutubeLogo.svg" class="socials-icon" alt="Youtube">
+                        </a>
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/TwitterLogo.svg" class="socials-icon" alt="Twitter">
+                        </a>
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/InstagramLogo.svg" class="socials-icon" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Explore -->
+                <div class="footer-explore">
+                    <p class="footer-heading">Explore</p>
+
+                    <ul class="list">
+                        <li class="item">
+                            <a href="#" class="link">Marketplace</a>
+                        </li>
+                        <li class="item">
+                            <a href="./rankings.html" class="link">Rankings</a>
+                        </li>
+                        <li class="item">
+                            <a href="#!" class="link">Connect a wallet</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Footer Subsribe -->
+                <div class="footer-subscribe">
+                    <p class="footer-heading">Join our weekly digest</p>
+
+                    <p class="footer-desc">Get exclusive promotions & updates straight to your inbox.</p>
+
+                    <div class="subsribe-form">
+                        <input type="email" name="email" class="subsribe-input" placeholder="Enter your email here"
+                            required>
+                        <a href="#!" class="btn btn-subsribe">
+                            <img src="./assets/images/icon/EnvelopeSimple.svg" class="btn__icon" alt="">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

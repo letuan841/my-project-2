@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header-fixed" id="header">
+        <div class="header__wrapper">
+            <!-- Header Logo -->
+            <a href="./index.html" class="header__logo">
+                <img src="./assets/images/icon/nft-marketplace.svg" alt="Nft Marketplace" class="logo">
+            </a>
+
+            <!-- Header Navigation -->
+            <nav class="header__navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="./marketplace.html" class="navbar__link">Marketplace</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Rankings</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="./create-account-desktop.html" class="navbar__link">Connect a wallet</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header btn -->
+            <a href="#!" class="btn header__btn">
+                <img src="./assets/images/icon/User.svg" class="btn__icon" alt="">
+                Sign Up
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- NFT Image Placeholder -->
+        <div class="nft__image-place-holder">
+            <img src="./assets/images/background-images/nft-place-holder.png" class="image" alt="The Orbitians">
+        </div>
+
+        <!-- NFT -->
+        <div class="nft">
+            <div class="main-content">
+                <div class="nft__wrapper">
+                    <!-- NFT Info -->
+                    <div class="nft__info">
+                        <h1 class="title-lv1">The Orbitians</h1>
+                        <p class="mint-date">Minted on Sep 30, 2022</p>
+
+                        <div class="nft__created">
+                            <span class="label">Created By</span>
+                            <div class="creator">
+                                <img src="./assets/images/avatars/Avatar Placeholder 3.png" alt="Orbitian"
+                                    class="creator__avatar">
+                                <p class="creator__name">Orbitian</p>
+                            </div>
+                        </div>
+
+                        <div class="nft__desc">
+                            <span class="label">Description</span>
+                            <p class="desc">The Orbitians <br>
+                                is a collection of 10,000 unique NFTs on the Ethereum blockchain</p>
+                            <p class="desc">There are all sorts of beings in the NFT Universe. The most advanced and
+                                friendly of the bunch are Orbitians.</p>
+                            <p class="desc">They live in a metal space machines, high up in the sky and only have one
+                                foot on Earth.</p>
+                            <p class="desc">These Orbitians are a peaceful race, but they have been at war with a group
+                                of invaders for many generations. The invaders are called Upside-Downs, because of their
+                                inverted bodies that live on the ground, yet do not know any other way to be.
+                                Upside-Downs believe that they will be able to win this war if they could only get an
+                                eye into Orbitian territory, so they've taken to make human beings their target.</p>
+                        </div>
+
+                        <div class="nft__details">
+                            <span class="label">Details</span>
+                            <a href="#!" class="row">
+                                <img src="./assets/images/icon/Globe.svg" class="icon" alt="">
+                                <p class="desc">View on Etherscan</p>
+                            </a>
+                            <a href="#!" class="row">
+                                <img src="./assets/images/icon/Globe.svg" class="icon" alt="">
+                                <p class="desc">View Original</p>
+                            </a>
+                        </div>
+
+                        <div class="nft__tags">
+                            <span class="label">Tags</span>
+                            <div class="tags__wrapper">
+                                <a href="#!" class="tag">Animation</a>
+                                <a href="#!" class="tag">illustration</a>
+                                <a href="#!" class="tag">moon</a>
+                                <a href="#!" class="tag">moon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NFT countdown -->
+                    <div class="nft__countdown">
+                        <div class="countdown">
+
+                            <p class="countdown__label">Auction ends in:</p>
+
+                            <div class="countdown__block">
+
+                                <div class="time-column">
+                                    <span class="number" id="hours">59</span>
+                                    <span class="label-time">Hours</span>
+                                </div>
+
+                                <div class="two-dot">:</div>
+
+                                <div class="time-column">
+                                    <span class="number" id="minutes">59</span>
+                                    <span class="label-time">Minutes</span>
+                                </div>
+
+                                <div class="two-dot">:</div>
+
+                                <div class="time-column">
+                                    <span class="number" id="seconds">59</span>
+                                    <span class="label-time">Seconds</span>
+                                </div>
+                            </div>
+
+                            <a href="#!" class="btn btn__nft">Place Bid</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More Product -->
+        <div class="product">
+            <div class="main-content">
+
+                <!-- Product Heading -->
+                <div class="heading">
+                    <div class="heading-info">
+                        <h2 class="sub-title">Discover More NFTs</h2>
+                    </div>
+
+                    <a href="./artist.html" class="btn btn-rankings">
+                        <img src="./assets/images/icon/ArrowRight.svg" class="btn__icon" alt="">
+                        Go To Artist Page
+                    </a>
+                </div>
+
+                <!-- Product List  -->
+                <div class="product__wrapper">
+                    <div class="product__list">
+
+                        <!-- Product Item 1 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Magic Mushroom 0325.png" alt="Magic Mushroom 0325"
+                                class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Magic Mushroom 0325</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 3.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">Shroomie</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 2 -->
+                        <a href="#!" class="product__item">
+
+                            <img src="./assets/images/thumb/Happy Robot 032.png" alt="Happy Robot 032" class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Happy Robot 032</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 4.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">BeKind2Robots</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 3 -->
+                        <a href="#!" class="product__item">
+
+                            <img src="./assets/images/thumb/Happy Robot 024.png" alt="Happy Robot 024" class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Happy Robot 024</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 4.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">BeKind2Robots</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <!-- Product Item 4 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Designer Bear.png" alt="Designer Bear" class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Designer Bear</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 2.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">Mr Fox</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 5 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Colorful Dog 0356.png" alt="Colorful Dog 0356"
+                                class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Colorful Dog 0356</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 7.svg" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">Keepitreal</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 6 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Dancing Robot 0312.png" alt="Dancing Robot 0312"
+                                class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Dancing Robot 0312</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Rankings Avatar 8.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">Robotica</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 7 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Cherry Blossom Girl 035.png" alt="Cherry Blossom Girl 035"
+                                class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Cherry Blossom Girl 035</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 5.svg" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">MoonDancer</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 8 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Space Travel.png" alt="Space Travel" class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Space Travel</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar Placeholder 8.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">NebulaKid</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Product Item 9 -->
+                        <a href="#!" class="product__item">
+                            <img src="./assets/images/thumb/Sunset Dimension.png" alt="Sunset Dimension" class="thumb">
+
+                            <!-- Product Body -->
+                            <div class="product__item--body">
+                                <p class="product__name">Sunset Dimension</p>
+
+                                <!-- Creator -->
+                                <div class="creator">
+                                    <img src="./assets/images/avatars/Avatar-1.png" class="creator__avatar"
+                                        alt="avatar">
+                                    <span class="creator__name line-clamp">Animakid</span>
+                                </div>
+
+                                <!-- Product Price -->
+                                <div class="product__price">
+                                    <div class="price">
+                                        <span class="price__label">Price</span>
+                                        <span class="price__value">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest__price">
+                                        <span class="price__label">Highest Bid</span>
+                                        <span class="price__value">2 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="main-content">
+            <div class="footer-wrapper">
+                <!-- Footer Social -->
+                <div class="footer-social">
+                    <div class="footer-logo">
+                        <img src="./assets/images/icon/nft-marketplace.svg" alt="NFT Marketplace">
+                    </div>
+
+                    <p class="footer-desc">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="footer-desc">Join our community</p>
+
+                    <div class="socials">
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/DiscordLogo.svg" class="socials-icon" alt="Discord">
+                        </a>
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/YoutubeLogo.svg" class="socials-icon" alt="Youtube">
+                        </a>
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/TwitterLogo.svg" class="socials-icon" alt="Twitter">
+                        </a>
+                        <a href="#!" class="socials-link">
+                            <img src="./assets/images/icon/InstagramLogo.svg" class="socials-icon" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Explore -->
+                <div class="footer-explore">
+                    <p class="footer-heading">Explore</p>
+
+                    <ul class="list">
+                        <li class="item">
+                            <a href="./marketplace.html" class="link">Marketplace</a>
+                        </li>
+                        <li class="item">
+                            <a href="#" class="link">Rankings</a>
+                        </li>
+                        <li class="item">
+                            <a href="#!" class="link">Connect a wallet</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Footer Subsribe -->
+                <div class="footer-subscribe">
+                    <p class="footer-heading">Join our weekly digest</p>
+
+                    <p class="footer-desc">Get exclusive promotions & updates straight to your inbox.</p>
+
+                    <div class="subsribe-form">
+                        <input type="email" name="email" class="subsribe-input" placeholder="Enter your email here"
+                            required>
+                        <a href="#!" class="btn btn-subsribe">
+                            <img src="./assets/images/icon/EnvelopeSimple.svg" class="btn__icon" alt="">
+                            Subscribe
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="copyright">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1505 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-font: "Space Mono", monospace;
+  --primary-color: #a259ff;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  transform: scale(0.95);
+}
+
+/* CSS for Common Class */
+.main-content {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 50px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.btn .btn__icon {
+  margin-right: 14px;
+}
+
+.title-lv1 {
+  font-weight: 600;
+  font-size: 6.7rem;
+  line-height: 1.1;
+}
+
+.title-lv2 {
+  font-weight: 600;
+  font-size: 5.1rem;
+  line-height: 1.1;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.desc {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.product__name {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+
+/* CSS for Creator */
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.creator .creator__avatar {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.creator .creator__name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+/* ========================= CSS for Header ================================= */
+.header {
+  padding: 10px 0;
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 0 50px;
+}
+
+.header-fixed {
+  position: sticky;
+  top: -10px;
+  z-index: 1;
+  transition: all ease 1s;
+}
+
+/* Header logo */
+.header__logo:hover {
+  transform: scale(1);
+}
+
+/* Header Navigation */
+.header__navbar {
+  margin-left: auto;
+}
+
+.header .navbar__list {
+  display: flex;
+}
+
+.header .navbar__link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* Header btn */
+.header__btn {
+  padding: 19px 31px;
+  background-color: var(--primary-color);
+}
+
+/* ========================= CSS for Hero ================================= */
+.hero {
+  padding: 90px 0 80px;
+}
+
+.hero__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.hero__info,
+.hero__product {
+  width: calc(50% - 15px);
+}
+
+/* CSS for Hero Info */
+
+.hero__info .info__desc {
+  margin-top: 20px;
+}
+
+.hero__btn {
+  margin: 30px 0;
+  min-width: 224px;
+  background-color: var(--primary-color);
+}
+
+/* CSS for Hero Stats */
+.hero__stats {
+  display: flex;
+  gap: 30px;
+}
+
+.hero__stats .stats__item {
+  width: calc(100% / 3);
+}
+
+.hero__stats .stats__value {
+  display: block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.hero__stats .stats__label {
+  font-weight: 400;
+  font-size: 2.4rempx;
+  line-height: 1.6;
+}
+
+/* CSS for Hero Product */
+.hero__product {
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.hero__product .product__image {
+  width: 510px;
+  height: 401px;
+}
+
+.hero__product .product__image .image {
+  width: 510px;
+  height: 401px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.hero__product .product__info {
+  padding: 22px 20px;
+}
+
+/* ========================= CSS for Trend ================================= */
+.trend {
+  padding: 80px 0;
+}
+
+/* CSS for Trend List */
+.trend__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.trend__product {
+  width: calc((100% / 3) - 20px);
+}
+
+.trend__product .product__link--big {
+  display: block;
+  width: 330px;
+  height: 330px;
+}
+
+.trend__product .product__link--big .product__image {
+  width: 330px;
+  height: 330px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.trend__product .product__row {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.product__row .product__link--small {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.6;
+  border: 1px solid #2b2b2b;
+}
+
+.product__row .product__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.trend .product__name {
+  margin-top: 15px;
+}
+
+/* ========================= CSS for Rankings================================= */
+.rankings {
+  padding: 80px 0;
+}
+
+/* CSS for Rankings Heading and Product Heading */
+
+.rankings__heading,
+.product .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.btn-rankings,
+.btn-product {
+  height: 60px;
+  border: 2px solid #a259ff;
+}
+
+.btn-rankings .icon {
+  color: #a259ff;
+}
+
+/* CSS for Ranking List */
+.rankings__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.rankings__creator {
+  display: block;
+  position: relative;
+  width: calc((100% / 4) - 22.5px);
+  padding: 20px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.creator__order {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2b2b2b;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #858584;
+}
+
+.creator__avatar--wrapper {
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+}
+
+.creator__avatar--wrapper .creator__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rankings .creator__name {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.rankings .creator__volume {
+  margin-top: 5px;
+}
+
+.rankings .creator__volume .volume__label {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #858584;
+}
+
+.rankings .creator__volume .volume__value {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* CSS for Categories */
+.categories {
+  padding: 80px 0;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.categories-item {
+  position: relative;
+  width: calc((100% / 4) - 22.5px);
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.categories-item .wrapper-thumb {
+  width: 240px;
+  height: 240px;
+}
+
+.categories-item .thumb {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.categories-item .translucent-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px) brightness(100%);
+}
+
+.categories-item__body {
+  padding: 20px 30px 25px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+/* CSS for product */
+.product {
+  padding: 80px 0;
+}
+
+.product__container .product__item {
+  background-color: #2b2b2b;
+}
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.product__item {
+  width: calc((100% / 3) - 20px);
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.product__item .thumb {
+  width: 330px;
+  height: 296px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.product__item--body {
+  padding: 20px 30px 25px;
+}
+
+.product__item .creator__name {
+  font-family: var(--secondary-font);
+}
+
+.product .product__price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.product .highest__price {
+  text-align: right;
+}
+
+.product__price .price__label {
+  display: block;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: #858584;
+}
+
+.product__price .price__value {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* CSS for Launches */
+.launches {
+  position: relative;
+  width: 100vw;
+  background-image: url("https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.launches::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(162, 89, 255, 0) 0%,
+    rgb(162, 89, 255) 100%
+  );
+  background-color: transparent;
+}
+
+.launches__wrapper {
+  position: relative;
+  display: flex;
+  padding: 360px 0 60px;
+}
+
+/* CSS for Launches Info */
+.launches__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  width: 72%;
+}
+
+.launches__info .creator {
+  display: inline-flex;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+}
+
+.launches__info .sub-title {
+  font-size: 5.1rem;
+}
+
+.launches__info .btn-launches {
+  background-color: #fff;
+  color: #2b2b2b;
+}
+
+/* CSS for Launches Countdown */
+.launches-countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 28%;
+}
+
+.countdown {
+  display: inline-block;
+  padding: 30px;
+  background-color: #3b3b3b80;
+  border-radius: 20px;
+}
+
+.countdown__label {
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* CSS for Countdown time */
+.countdown__block {
+  display: flex;
+  gap: 10px;
+}
+
+.countdown__block .number,
+.countdown__block .two-dot {
+  display: flex;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.countdown__block .label-time {
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* CSS for How */
+.how {
+  padding: 80px 0;
+}
+
+.how-list {
+  margin-top: 48px;
+  display: flex;
+  gap: 30px;
+}
+
+.how-item {
+  padding: 10px 30px 30px;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.how-item .thumb-wrapper {
+  width: 250px;
+  height: 250px;
+}
+
+.how-item .thumb-wrapper .thumb {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.how-item__title {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.how-item__desc {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* CSS for Newsletter */
+.newsletter {
+  padding: 40px 0 80px;
+}
+
+.newsletter-body {
+  display: flex;
+  gap: 80px;
+  padding: 60px;
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+
+.newsletter .thumb-wrapper,
+.newsletter .newsletter-info {
+  width: calc(100% / 2 - 40px);
+}
+
+.newsletter .thumb-wrapper {
+  height: 310px;
+}
+
+.newsletter .thumb-wrapper .thumb {
+  width: 425px;
+  height: 310px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* CSS for Subsribe form */
+.subsribe-form {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0px 16px 20px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.subsribe-input {
+  min-width: 182px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #2b2b2b;
+}
+
+.btn-subsribe {
+  background: #a259ff;
+  border-radius: 20px;
+}
+
+/* CSS for footer */
+.footer {
+  background-color: #3b3b3b;
+  padding: 40px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #858584;
+}
+
+.footer-social {
+  max-width: 327px;
+  padding-right: 84px;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #cccccc;
+}
+
+.footer-desc:nth-child(3) {
+  margin: 20px 0 15px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials .socials-link {
+  margin-right: 11px;
+}
+
+.socials .socials-link:last-child {
+  margin-right: 0;
+}
+
+.footer-heading {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.footer-explore {
+  min-width: 240px;
+}
+
+.footer-explore .list {
+  margin-top: 25px;
+}
+
+.footer-explore .link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #cccccc;
+}
+
+.footer-explore .item:first-child .link {
+  margin-top: 0;
+}
+
+.footer-subscribe .footer-desc {
+  margin: 25px 0 20px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: #cccccc;
+}
+
+/* ===================================================
+  ====================================================
+
+          MARKET PLACE PAGE
+*/
+
+/* ============= CSS for Browse ========================= */
+.browse {
+  padding: 80px 0;
+}
+
+.browse__search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 19px 70px 19px 20px;
+  border: 1px solid #3b3b3b;
+  border-radius: 20px;
+}
+
+.browse__search .search__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  color: #858584;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.browse__search .search__icon {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+
+/* ======================== CSS for Product Crossbar ================================= */
+.crossbar {
+  padding-top: 10px;
+  border-top: 1px solid #3b3b3b;
+}
+
+.crossbar-wrapper {
+  display: flex;
+}
+
+.crossbar1,
+.crossbar2,
+.crossbar3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0 14px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.crossbar .label {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #858584;
+}
+
+.crossbar .value {
+  display: inline-block;
+  margin-left: 16px;
+  padding: 0 10px;
+  line-height: 32px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+#radio-product1:checked ~ .product__container .first {
+  margin-left: 0;
+}
+
+#radio-product2:checked ~ .product__container .first {
+  margin-left: calc(-100% - 30px);
+}
+
+#radio-product3:checked ~ .product__container .first {
+  margin-left: calc(-200% - 60px);
+}
+
+#radio-product1:checked ~ .crossbar .crossbar1::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #7b7b7a;
+}
+
+#radio-product1:checked ~ .crossbar .crossbar1 .label {
+  color: #fff;
+}
+
+#radio-product1:checked ~ .crossbar .crossbar1 .value {
+  background-color: #858584;
+}
+
+#radio-product2:checked ~ .crossbar .crossbar2::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #7b7b7a;
+}
+
+#radio-product2:checked ~ .crossbar .crossbar2 .label {
+  color: #fff;
+}
+
+#radio-product2:checked ~ .crossbar .crossbar2 .value {
+  background-color: #858584;
+}
+
+#radio-product3:checked ~ .crossbar .crossbar3::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #7b7b7a;
+}
+
+#radio-product3:checked ~ .crossbar .crossbar3 .label {
+  color: #fff;
+}
+
+#radio-product3:checked ~ .crossbar .crossbar3 .value {
+  background-color: #858584;
+}
+
+/* ==================== CSS for Product =========================== */
+.radio-product {
+  display: none;
+}
+
+.product__container {
+  background-color: #3b3b3b;
+  border-bottom: 2px solid #2b2b2b;
+}
+
+.product__container .product {
+  padding-top: 60px;
+}
+
+.product__container .product__list {
+  margin-top: 0;
+  transition: all 1s ease;
+}
+
+.product__wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.product__wrapper .product__list {
+  min-width: 100%;
+  margin-right: 30px;
+}
+
+/* ===================================================
+  ====================================================
+
+          TOP CREATOR
+*/
+
+/* CSS for Hero Rankings */
+.hero-rankings {
+  padding: 80px 0;
+}
+
+/* CSS for Crossbar Leaderboards */
+.crossbar-leaderboards .wrapper {
+  display: flex;
+}
+
+.crossbar-leaderboards .item {
+  width: calc(100% / 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #858584;
+  cursor: pointer;
+}
+
+#radio-leaderboards1:checked ~ .crossbar-leaderboards .item1 {
+  color: #fff;
+  border-bottom: 2px solid #858584;
+}
+
+#radio-leaderboards2:checked ~ .crossbar-leaderboards .item2 {
+  color: #fff;
+  border-bottom: 2px solid #858584;
+}
+
+#radio-leaderboards3:checked ~ .crossbar-leaderboards .item3 {
+  color: #fff;
+  border-bottom: 2px solid #858584;
+}
+
+#radio-leaderboards4:checked ~ .crossbar-leaderboards .item4 {
+  color: #fff;
+  border-bottom: 2px solid #858584;
+}
+
+/* ================ CSS for Leaderboards ==================== */
+.leaderboards {
+  padding: 40px 0;
+}
+
+.leaderboards__list--wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.leaderboards__list {
+  min-width: 100%;
+  margin-right: 30px;
+  transition: all 1s ease;
+}
+
+.leaderboards__item {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  background: #3b3b3b;
+}
+
+.leaderboards__item:hover {
+  transform: scale(0.98);
+}
+
+.leaderboards__item.label:hover {
+  transform: scale(1);
+}
+
+.leaderboards__item.label {
+  border: 1px solid #3b3b3b;
+  background-color: transparent;
+}
+
+/* CSS for Leaderboards Creator Info */
+.leaderboards__creator--info {
+  display: flex;
+  align-items: center;
+  width: 45.2%;
+  transition: all 0.3s ease;
+}
+
+.leaderboards__creator--info .creator__rankings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2b2b2b;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #858584;
+}
+
+.leaderboards__creator--info .creator__avatar {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.leaderboards__creator--info .creator__avatar .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leaderboards__creator--info .creator__name {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+/* CSS for Leaderboards Creator Statistical */
+.leaderboards__creator--statistical {
+  display: flex;
+  width: 54.8%;
+}
+
+.leaderboards__creator--statistical span {
+  display: inline-block;
+  width: calc(100% / 3);
+}
+
+.leaderboards .label {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #858584;
+}
+
+.leaderboards__creator--statistical .change {
+  font-family: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #00ac4f;
+}
+
+.leaderboards__creator--statistical .nfts-sold,
+.leaderboards__creator--statistical .volume {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* Slide for leader board */
+.radio-rankings {
+  display: none;
+}
+
+#radio-leaderboards1:checked ~ .leaderboards .first {
+  margin-left: 0;
+}
+
+#radio-leaderboards2:checked ~ .leaderboards .first {
+  margin-left: calc(-100% - 30px);
+}
+
+#radio-leaderboards3:checked ~ .leaderboards .first {
+  margin-left: calc(-200% - 60px);
+}
+
+#radio-leaderboards4:checked ~ .leaderboards .first {
+  margin-left: calc(-300% - 90px);
+}
+
+/* ===================================================
+  ====================================================
+
+          ARTIST PAGE
+*/
+
+/* CSS for Iamge Placeholder */
+.artist__image-place-holder {
+  width: 100vw;
+  height: 320px;
+}
+
+.artist__image-place-holder .image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* ============= CSS for  Artist ================= */
+
+/* CSS for artist__avatar */
+.artist {
+  padding-bottom: 40px;
+}
+
+.artist__avatar {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 120px;
+  transform: translateY(-50%);
+}
+
+.artist__avatar .avatar {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #2b2b2b;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* CSS for artist__info */
+.artist__info {
+  margin-top: -20px;
+}
+
+.artist__info .row {
+  display: flex;
+}
+
+.artist__info .btn__wallet-address {
+  margin-left: auto;
+  background: #a259ff;
+}
+
+.artist__info .btn__follow {
+  margin-left: 20px;
+  border: 2px solid #a259ff;
+}
+
+.artist__info .statistical-row {
+  display: flex;
+  gap: 20;
+  width: 48.5%;
+  margin-top: 26px;
+}
+
+.artist__info .statistical-row .item {
+  width: calc((100% / 3) - 20px);
+}
+
+.artist__info .statistical-row .value {
+  display: block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.artist__info .statistical-row .label {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+.artist__info .bio {
+  margin-top: 30px;
+}
+
+.artist__info .bio .label {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #858584;
+}
+
+.artist__socials {
+  margin-top: 30px;
+}
+
+.artist__socials .label {
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #858584;
+}
+
+/* ===================================================
+  ====================================================
+
+          NFT PAGE
+*/
+
+/* =========== CSS for nft__image-place-holder =========*/
+.nft__image-place-holder {
+  width: 100vw;
+  height: 560px;
+}
+
+.nft__image-place-holder .image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+/*============= CSS for nft ============== */
+.nft {
+  padding: 40px 0;
+}
+
+.nft__wrapper {
+  display: flex;
+}
+
+.nft .label {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #858584;
+}
+
+/* CSS for .nft__info */
+.nft__info {
+  width: 58%;
+}
+
+.nft__info .mint-date {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #858584;
+}
+
+.nft__created {
+  margin-top: 30px;
+}
+
+.nft__created .creator__name {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.nft__desc {
+  margin-top: 30px;
+}
+
+.nft__desc .desc {
+  margin-top: 40px;
+}
+
+.nft__desc .desc:nth-child(2) {
+  margin-top: 10px;
+}
+
+.nft__details {
+  margin-top: 30px;
+}
+
+.nft__details .row {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nft__details .row:hover {
+  transform: scale(1);
+}
+
+.nft__details .row .icon {
+  margin-right: 13px;
+}
+
+.nft__details .row .desc {
+  margin-top: 0;
+}
+
+.nft__tags {
+  margin-top: 30px;
+}
+
+.nft__tags .tags__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft__tags .tags__wrapper .tag {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* CSS for  .nft__countdown */
+.nft__countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 42%;
+}
+
+.btn__nft {
+  width: 100%;
+  margin: 30px auto 0;
+  background: #a259ff;
+}
+
+/* ===================================================
+  ====================================================
+
+          CREATE ACCOUNT
+*/
+
+.create-account {
+  padding: 20px 0;
+}
+
+.create-account__wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.create-account__img,
+.form__wrapper {
+  width: calc((100% / 2) - 30px);
+}
+
+.create-account__img {
+  height: 610px;
+}
+
+.create-account__img .image {
+  width: 100%;
+  height: 610px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form {
+  margin-top: 40px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  max-width: 330px;
+  margin-bottom: 27px;
+  padding: 12px 20px;
+  background-color: #fff;
+  border: 1px solid #858584;
+  border-radius: 20px;
+}
+
+.form-group .icon {
+  margin-right: 12px;
+}
+
+.form-group input {
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #2b2b2b;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.btn__signup {
+  display: block;
+  border: none;
+  padding: 12px 20px;
+  width: 330px;
+  color: #fff;
+  background: #a259ff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.btn__signup:hover {
+  transform: scale(0.95);
+}
